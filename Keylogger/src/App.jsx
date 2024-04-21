@@ -47,8 +47,11 @@ const App = () => {
           </div>
         </div>
         <div className="bg-red-100 h-screen flex flex-col justify-center">
-          <div className="flex justify-center">
-            <div className="bg-slate-300 w-1/2 text-center text-4xl p-5">
+          <div className="flex justify-center flex-col items-center">
+            <div className="bg-slate-300 text-center text-4xl p-5 my-8 h-[70px] w-[70px] rounded-xl">
+              {loggedValue[loggedValue.length - 1]}
+            </div>
+            <div className="bg-slate-300 w-1/2 text-center text-4xl p-5 min-h-[100px] my-4">
               {loggedValue.join(", ")}
             </div>
           </div>
@@ -59,3 +62,8 @@ const App = () => {
 };
 
 export default App;
+
+//Styling
+//Implement single key press style
+//Add a full string element
+//Add a copy button
